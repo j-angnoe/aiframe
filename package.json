@@ -1,0 +1,12 @@
+{
+  "name": "aiframe",
+  "version": "0.0.1",
+  "description": "Aiframe - An ajax frame to replace iframe.",
+  "main": "aframe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Angnoe <joshua@fluxfx.nl>",
+  "main": "ajframe.js",
+  "license": "MIT"
+}
