@@ -1,20 +1,23 @@
 function aiframe(elem) {
-	if (typeof elem === 'string') {
-		elem = document.querySelector(elem);
+
+	function init() {
+		if (typeof elem === 'string') {
+			elem = document.querySelector(elem);
+		}
+		this.elem = elem;
+		
+		var self = this;
+		
+		elem.aiframeInstance = this;
+
+		this.handleEvents();
+
+		this.defaultSelector = null;
+
+		this.setSelector = function (selector) {
+			this.defaultSelector = selector;
+		};
 	}
-	this.elem = elem;
-	
-	var self = this;
-	
-	elem.aiframeInstance = this;
-
-	this.handleEvents();
-	
-	this.defaultSelector = null;
-
-	this.setSelector = function (selector) {
-		this.defaultSelector = selector;
-	};
 
 	this.load = function (url, data, selector) {
 		// console.log('load url ' + url);
@@ -150,6 +153,8 @@ function aiframe(elem) {
 		}
 		return elem;
 	}
+	
+	init();
 }
 
 aiframe.reactive = function () {
