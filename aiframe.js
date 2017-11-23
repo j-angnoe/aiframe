@@ -1,23 +1,23 @@
 function aiframe(elem) {
 
+	var self = this;
+
 	function init() {
 		if (typeof elem === 'string') {
 			elem = document.querySelector(elem);
 		}
-		this.elem = elem;
+		self.elem = elem;
 		
-		var self = this;
-		
-		elem.aiframeInstance = this;
+		elem.aiframeInstance = self;
 
-		this.handleEvents();
+		self.handleEvents();
 
-		this.defaultSelector = null;
-
-		this.setSelector = function (selector) {
-			this.defaultSelector = selector;
-		};
+		self.defaultSelector = null;
 	}
+
+	self.setSelector = function (selector) {
+		this.defaultSelector = selector;
+	};
 
 	this.load = function (url, data, selector) {
 		// console.log('load url ' + url);
@@ -153,7 +153,7 @@ function aiframe(elem) {
 		}
 		return elem;
 	}
-	
+
 	init();
 }
 
