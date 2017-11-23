@@ -6,6 +6,8 @@ With aiframe you can denote sections in your site which should be ajax-enabled a
 ## Live example:
 
 - http://fluxfx.nl/aiframe/example/
+- https://jsfiddle.net/reLqxhLw/  (JsFiddle is not the best solution to demo ajax clicks / posts)
+
 
 
 ```

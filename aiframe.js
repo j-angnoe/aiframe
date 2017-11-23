@@ -164,6 +164,8 @@ aiframe.reactive = function () {
 			return;
 		}
 		(target||document).querySelectorAll('[aiframe], [aiframe-load]').forEach(function (elem) {
+			console.log('aiframe');
+
 			var aiframeInstance = new aiframe(elem);
 
 			if (elem.hasAttribute('aiframe-select')) {
