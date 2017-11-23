@@ -1,6 +1,6 @@
 {
   "name": "aiframe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Aiframe - An ajax frame to replace iframe.",
   "main": "ajframe.js",
   "scripts": {
