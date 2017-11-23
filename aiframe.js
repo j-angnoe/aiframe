@@ -8,6 +8,8 @@ function aiframe(elem) {
 	
 	elem.aiframeInstance = this;
 
+	this.handleEvents();
+	
 	this.defaultSelector = null;
 
 	this.setSelector = function (selector) {
