@@ -2,8 +2,17 @@
 
 With aiframe you can denote sections in your site which should be ajax-enabled and stay isolated. Within an aiframe all link clicks and form submissions will stay inside the aiframe. Written with zero dependencies.
 
+
+## Live example:
+
+- http://fluxfx.nl/aiframe/example/
+
+
 ```
 <html>
+<head>
+	<script src="https://unpkg.com/aiframe@latest/aiframe.js"></script>
+</head>
 <body>
 	<div>
 		<p>Hello welcome</p>
